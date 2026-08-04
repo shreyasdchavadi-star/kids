@@ -14,7 +14,7 @@
 
 import gradio as gr
 from typing import TypedDict
-from google.colab import userdata
+
 from langgraph.graph import StateGraph, END
 from langchain_groq import ChatGroq
 
@@ -22,7 +22,9 @@ from langchain_groq import ChatGroq
 # Groq API Key
 # ==========================================================
 
-GROQ_API_KEY = userdata.get("GROQ_API_KEY")
+import os
+
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 llm = ChatGroq(
     api_key=GROQ_API_KEY,
