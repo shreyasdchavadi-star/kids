@@ -1,1 +1,5 @@
-
+gradio
+langgraph
+langchain
+langchain-core
+langchain-groq
