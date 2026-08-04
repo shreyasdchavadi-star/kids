@@ -178,26 +178,14 @@ def chatbot(message, history):
 
 demo = gr.ChatInterface(
     fn=chatbot,
-    title="🤖 AI Teacher for Kids (Age 5–15)",
-    description="""
-This chatbot uses LangGraph with:
-✅ Process Node
-✅ PrintResponse Node
-✅ Chat History
-✅ Expert AI Teacher Prompt
-""",
-    chatbot=gr.Chatbot(height=500),
-    textbox=gr.Textbox(
-        placeholder="Ask anything about AI...",
-        container=False,
-        scale=7
-    ),
-    theme=gr.themes.Soft(),
-    type="messages"
+    title="🤖 AI Teacher for Kids",
+    description="AI chatbot for kids"
 )
+
+demo.launch()
 
 # ==========================================================
 # Launch Application
 # ==========================================================
 
-demo.launch(share=True)
+
