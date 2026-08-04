@@ -10,7 +10,7 @@
 # ==========================================================
 
 # Install Libraries
-!pip -q install gradio langgraph langchain langchain-core langchain-groq
+
 
 import gradio as gr
 from typing import TypedDict
